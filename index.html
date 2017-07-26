@@ -1,6 +1,77 @@
-<html>
-<head><title>ss</title></head>
-<body>
-<h1>abhishek satre</h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
+
+	<style type="text/css">
+		.container{width: 630px; margin: 0 auto;}
+	
+		h1{text-align: center; padding: 10px 0; margin-bottom: 50px;}
+
+		.crsl-pager-wrap{text-align: center; padding: 10px; margin-top: 10px;}
+		.crsl-pager-wrap span{background-color: #000; color: #FFF; width: 10px; line-height: 10px; border-radius: 10px; height: 10px; margin: 0 5px; display: inline-block;}
+		.crsl-pager-active{background: #ff8a00 !important;}
+		
+		.crsl-nav{width: 100%; padding: 20px; margin-top: 10px;}
+		.crsl-nav .previous{float: left;}
+		.crsl-nav .next{float: right;}
+		.crsl-nav:after{clear: both;}
+	</style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    	
+	<div class="container">
+			
+		<h1>Responsive Carousel with pager</h1>
+
+		<div class="slider" data-navigation="home-slider" data-pager = "home-pager">
+		<div class="slider-control-wrap crsl-nav container" id="home-slider">
+            <a href=# id="prev" class="previous">Previous</a> 
+            <a href=# id="next" class="next">Next</a>
+        </div>
+		<div class="crsl-wrap">
+	            <a href="#" class="crsl-item">
+	           		<img src="http://basilio.github.io/responsiveCarousel/img/temp/nature.jpg">
+	            </a>
+	            <a href="#" class="crsl-item">
+    	            <img src="http://basilio.github.io/responsiveCarousel/img/temp/sports.jpg">
+	            </a>
+	            <a href="#" class="crsl-item">
+		            <img src="http://basilio.github.io/responsiveCarousel/img/temp/abstract.jpg">
+	            </a>
+	            <a href="#" class="crsl-item">
+		            <img src="http://basilio.github.io/responsiveCarousel/img/temp/people.jpg">
+	            </a>
+	            <a href="#" class="crsl-item">
+		            <img src="http://basilio.github.io/responsiveCarousel/img/temp/food.jpg">
+	            </a>
+	        </div>
+	        
+	        <!-- Pager -->
+	        <div class="crsl-pager-wrap" id="home-pager"></div>
+	        <!-- Pager End -->
+	</div>
+
+	</div>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+  	<script src="responsiveCarousel.js"></script>
+
+  	<script> $('.slider').carousel({ pager: true, autorotate: 500}); </script>
+  </body>
 </html>
